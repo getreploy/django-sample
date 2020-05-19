@@ -3,5 +3,5 @@ services:
     port: 8080
     image: reploy/python3:v1
     commands: 
-      - pip3 install requirements.txt
+      - pip3 install -r requirements.txt
       - python3 manage.py runserver 8080
