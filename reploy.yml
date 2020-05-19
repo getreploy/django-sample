@@ -1,0 +1,6 @@
+services:
+  django:
+    port: 8080
+    image: reploy/python3:v1
+    commands: 
+      - python3 manage.py runserver 8080
