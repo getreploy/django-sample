@@ -2,6 +2,8 @@ services:
   django:
     port: 8000
     image: reploy/python3:v1
+    environment:
+      DEBUG: true
     commands: 
-      - pip3 install -r requirements.txt
-      - python3 manage.py runserver 0.0.0.0:8000
+      - pip -q install -r requirements.txt
+      - python manage.py runserver 0.0.0.0:8000
