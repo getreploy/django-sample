@@ -6,4 +6,5 @@ services:
       DEBUG: true
     commands: 
       - pip3 -q install -r requirements.txt
+      - printenv
       - python3 manage.py runserver 0.0.0.0:8000
