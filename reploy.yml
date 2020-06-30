@@ -5,6 +5,7 @@ services:
     environment:
       DEBUG: true
     build: 
+      - which tee
       - pip3 -q install -r requirements.txt
     serve:
       - pip3 show Django
