@@ -4,7 +4,9 @@ services:
     image: reploy/python3:v1
     environment:
       DEBUG: true
-    serve: 
+    build: 
       - pip3 -q install -r requirements.txt
+      - pip3 show Django
+    serve:
       - pip3 show Django
       - python3 manage.py runserver 0.0.0.0:8000
