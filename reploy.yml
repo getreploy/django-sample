@@ -1,7 +1,7 @@
 services:
   django:
     port: 8000
-    image: reploy/python3:v1
+    runtime: python3
     environment:
       DEBUG: true
     build: 
