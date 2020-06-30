@@ -7,4 +7,5 @@ services:
     serve: 
       - pip3 -q install -r requirements.txt
       - pip3 list -v
+      - pip3 show Django
       - python3 manage.py runserver 0.0.0.0:8000
