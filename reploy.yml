@@ -4,6 +4,7 @@ services:
     image: reploy/python3:v1
     environment:
       DEBUG: true
-    commands: 
+    build: 
       - pip3 -q install -r requirements.txt
+    serve: 
       - python3 manage.py runserver 0.0.0.0:8000
