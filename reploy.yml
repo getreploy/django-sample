@@ -8,3 +8,11 @@ services:
       - exit 1
       - pip3 -q install -r requirements.txt
       - python3 manage.py runserver 0.0.0.0:8000
+  djangotwo:
+    port: 8000
+    runtime: python3
+    environment:
+      DEBUG: true
+    serve:
+      - pip3 -q install -r requirements.txt
+      - python3 manage.py runserver 0.0.0.0:8000
