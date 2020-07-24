@@ -5,9 +5,7 @@ services:
     environment:
       DEBUG: true
     build:
-      - sleep 20
-      - exit 1
-      - sleep 20
+      - sleep 60
     serve:
       - pip3 -q install -r requirements.txt
       - python3 manage.py runserver 0.0.0.0:8000
